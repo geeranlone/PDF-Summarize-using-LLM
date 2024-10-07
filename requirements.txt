@@ -2,18 +2,7 @@ streamlit==1.26.0
 langchain==0.0.323
 huggingface-hub==0.16.4
 sentence-transformers==2.2.2
-
-
-# For faiss-cpu, use a binary wheel if available, or point users to install SWIG manually
-faiss-cpu==1.7.2  # Alternatively, faiss-gpu can be used if the system supports it
-
-
-Pillow>=8.2.0
-zlib
-SWIG
-
-
-
+faiss-cpu==1.7.4
 openai==0.28.0
-pypdf>=3.1.0
-python-dotenv
+pypdf==3.15.2
+python-dotenv==1.0.0

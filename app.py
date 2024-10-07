@@ -26,8 +26,7 @@ def main():
     pdf = st.file_uploader('Upload your PDF Document')
     submit = st.button('Generate Summary')
     
-    os.environ["OPENAI_API_KEY"] = "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"
-    
+    os.environ["OPENAI_API_KEY"] = "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"    
     if submit:
         response = summarizer(pdf)
         st.subheader('Summary of File:')

@@ -1,5 +1,18 @@
 import subprocess
 import sys
+import os
+import subprocess
+
+# Ensure dependencies are installed
+required_packages = ['pypdf', 'langchain', 'faiss-cpu', 'huggingface-hub']
+
+for package in required_packages:
+    try:
+        __import__(package)
+    except ImportError:
+        subprocess.check_call(['pip', 'install', package])
+
+
 
 def install_requirements():
     try:
